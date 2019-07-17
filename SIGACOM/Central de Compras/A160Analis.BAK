@@ -2410,7 +2410,7 @@ Case nEvento == 4
 						SC7->C7_TPFRETE := SC8->C8_TPFRETE
 						SC7->C7_VLDESC  := ((SC7->C7_TOTAL*SC8->C8_VLDESC)/SC8->C8_TOTAL)
 						SC7->C7_IPIBRUT := "B"
-						SC7->C7_USER    := IIF(Empty(SC8->C8_ZUSER),__cUserID,SC8->C8_ZUSER)
+						SC7->C7_USER    := SC8->C8_ZUSER
 						SC7->C7_VALEMB  := SC8->C8_VALEMB
 						SC7->C7_FRETE   := SC8->C8_TOTFRE
 						SC7->C7_ZAPLIC  := SC8->C8_ZAPLIC

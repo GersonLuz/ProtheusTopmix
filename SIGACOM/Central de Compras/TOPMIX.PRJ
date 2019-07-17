@@ -1,4 +1,4 @@
-Group TOPMIX
+Group 
    Version=7.0
    VSSDB=
    HasProperties=1
@@ -16,32 +16,14 @@ Group TOPMIX
       FoldersCount=2
       Folder Fontes
          VSSPath=Fontes
-         FilesCount=9
-         File \TOTVS\Microsiga\Protheus\projeto\Gestao de Compras\novos\Projeto Central de Compras\FSJOBP06.prw
+         FilesCount=3
+         File \ProjetoTopmix\ProtheusTopmix\SIGACOM\Central de Compras\A160Analis.prw
              Type=T
          End
-         File \ProjetoTopmix\SIGACOM\Central de Compras\FSJOBP06.prw
+         File \ProjetoTopmix\ProtheusTopmix\SIGACOM\Central de Compras\AFATP05.PRW
              Type=T
          End
-         File \ProjetoTopmix\SIGACOM\Central de Compras\TPCOM004.prw
-             Type=T
-         End
-         File \ProjetoTopmix\SIGACOM\Central de Compras\TPCOM005.prw
-             Type=T
-         End
-         File \ProjetoTopmix\SIGACOM\Central de Compras\AFATR05.prw
-             Type=T
-         End
-         File \ProjetoTopmix\SIGACOM\Central de Compras\AFATP05.PRW
-             Type=T
-         End
-         File \ProjetoTopmix\SIGACOM\Central de Compras\A160Analis.prw
-             Type=T
-         End
-         File \ProjetoTopmix\SIGACOM\Central de Compras\AFATR03.prw
-             Type=T
-         End
-         File \ProjetoTopmix\SIGACOM\Central de Compras\AFATR01.PRW
+         File \ProjetoTopmix\ProtheusTopmix\SIGACOM\Central de Compras\AFATP20.prw
              Type=T
          End
       End

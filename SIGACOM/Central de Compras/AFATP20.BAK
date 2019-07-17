@@ -23,7 +23,6 @@ Local cZFilOri  := ""
 Local cZNumPed  := ""
 Local cZNumCot  := ""
 Local lPodeEx   := .T.
-Local cUserC7
 
 if cOrigem == "3"    
 	cZFilOri  := aWBrowse3[oWBrowse3:nAt,11]
@@ -43,11 +42,6 @@ endif
 dbSelectArea("SC7")
 dbSetOrder(1)
 if dbSeek(cZFilOri+cZNumPed)
-   cUserC7 := SC7->C7_USER
-   If (cUserC7 <> __cUserID)
-   MsgStop( "A ordem de compras " + cZNumPed + " não poderá ser excluída. SOMENTE O USUÁRIO GERADOR." ) 
-   return()
-   Else 
 	While !Eof("SC7") .And. cZFilOri == SC7->C7_FILIAL .And. cZNumPed == SC7->C7_NUM
 		if SC7->C7_QUJE > 0 
 			lPodeEx := .F.
@@ -55,7 +49,6 @@ if dbSeek(cZFilOri+cZNumPed)
 		dbSelectArea("SC7")
 		dbSkip()
 	enddo
-   Endif	
 endif    
 
 if !lPodeEx

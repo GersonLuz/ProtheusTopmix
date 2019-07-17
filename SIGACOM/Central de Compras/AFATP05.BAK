@@ -158,7 +158,7 @@ FFornece() // Busca fornecedores.
     
     @ 394, 005 SAY oSay10 PROMPT "Valor dos Descontos" SIZE 060, 007 OF oDlg FONT oFont4 COLORS 0, 16777215 PIXEL
     @ 396, 082 MSCOMBOBOX oTpDesc VAR cTpDesc ITEMS aTpDesc SIZE 060, 011 OF oDlg COLORS 0, 16777215 FONT oFont4 PIXEL
-    @ 395, 142 MSGET oValDesc VAR nValDesc SIZE 060, 009 PICTURE "@E 999,999,999.99" Valid IIF(cTpDesc <> '1',fRateiaDesc(nValDEsc),) WHEN IIF(cTpDesc == '1',.T.,.F.) OF oDlg COLORS 0, 16777215 FONT oFont3 PIXEL
+    @ 395, 142 MSGET oValDesc VAR nValDesc SIZE 060, 009 PICTURE "@E 999,999,999.99" Valid IIF(cTpDesc <> '1',fRateiaDesc(nValDEsc),) OF oDlg COLORS 0, 16777215 FONT oFont3 PIXEL
     
     @ 394, 254 SAY oSay11 PROMPT "Total da Cotação" SIZE 050, 007 OF oDlg FONT oFont4 COLORS 0, 16777215 PIXEL
     @ 394, 306 MSGET oTotalCot VAR nTotalCot SIZE 060, 011 PICTURE "@E 999,999,999.99" OF oDlg COLORS 0, 16777215 FONT oFont3 PIXEL WHEN .F.
