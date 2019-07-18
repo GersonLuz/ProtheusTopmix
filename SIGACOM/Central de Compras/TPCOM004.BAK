@@ -263,7 +263,7 @@ cQuery += "   INNER JOIN  " + RetSqlName('SA2') + " SA2  ON A2_COD = C7_FORNECE 
 cQuery += "   INNER JOIN  " + RetSqlName('SB1') + " SB1  ON B1_COD = C7_PRODUTO AND SB1.D_E_L_E_T_ = '' " 
 cQuery += "    WHERE C7_FILIAL  = '"+IIF(oBrowse:nAt > Len(aBrowse),aBrowse[oBrowse:nAt-1,01],aBrowse[oBrowse:nAt,01])+"' "
 cQuery += "     AND   C7_NUM    = '"+IIF(oBrowse:nAt > Len(aBrowse),aBrowse[oBrowse:nAt-1,03],aBrowse[oBrowse:nAt,03])+"' "
-cQuery += "     AND   C7_CONAPRO    = 'B' "
+//cQuery += "     AND   C7_CONAPRO    = 'B' "
 cQuery += "      AND SC7.D_E_L_E_T_ = '' " 
 cQuery += "       ORDER BY C7_ITEM "                          
 
@@ -331,8 +331,8 @@ cQuery += Chr(13)+" INNER JOIN " + RetSqlName("SC7") + " SC7 ON C7_FILIAL = CR_F
 cQuery += Chr(13)+" WHERE SCR.D_E_L_E_T_ <> '*' "
 cQuery += Chr(13)+" AND CR_USER = '"+cUserID+"' "
 cQuery += Chr(13)+" AND CR_STATUS IN ('02') "
-cQuery += Chr(13)+" AND C7_CONAPRO = 'B' "
-cQuery += Chr(13)+" AND C7_ENCER <> 'E' "	
+//cQuery += Chr(13)+" AND C7_CONAPRO = 'B' "
+//cQuery += Chr(13)+" AND C7_ENCER <> 'E' "	
 cQuery += Chr(13)+" ORDER BY 1,2 "     
 	
 DbUseArea(.T.,"TOPCONN",TcGenQry(,,cQuery),cTabDoc,.F.,.F.)
